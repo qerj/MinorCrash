@@ -5,8 +5,7 @@
 
 bool listProcess()
 {
-    bool isAdmin = IsUserAnAdmin();
-    if (!isAdmin)
+    if (!IsUserAnAdmin())
     {
         std::cout << "Run the program in admin mode!\n";
         return 0;
